@@ -1,0 +1,48 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+<header class="header header--loggedIn">
+    <div class="container">
+      <a href="{% url 'Home' %}" class="header__logo">
+        <img src="{% static 'images/logo.svg' %}" />
+        <h1>Feynman's Utopia</h1>
+      </a>
+    </div>
+</header>
+
+<p style="text-align: center; margin-top: 50px;"> Hi {{user.name}}, What do you want to do now :)?</p>
+
+<div style="text-align: center; margin-top: 20px;">
+<div style="margin-top: 60px;">
+    <a href="{% url 'to_do' %}">
+    <input type="submit" value="Learn" name="learn" style="background: #0084ff;
+    background: -webkit-linear-gradient(269deg,#0048ff,#0096ff);
+    background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+    background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0084ff,endColorstr=#0052ff,GradientType=1);
+    border-radius: 10px; height: 40px; width: 100px;">
+    </a>
+</div>
+<div style="margin-top: 60px;">
+    <a href="{% url 'HomePage' %}">
+    <input type="submit" value="Teach" name="teach" style="background: #0084ff;
+    background: -webkit-linear-gradient(269deg,#0048ff,#0096ff);
+    background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+    background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0084ff,endColorstr=#0052ff,GradientType=1);
+    border-radius: 10px; height: 40px; width: 100px; border-radius: 10px; height: 40px; width: 100px;">
+    </a>
+</div>
+<div style="margin-top: 60px;">
+    <a href="{% url 'Home' %}">
+    <input type="submit" value="Discuss" name="discuss"  style="background: #0084ff;
+    background: -webkit-linear-gradient(269deg,#0048ff,#0096ff);
+    background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+    background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0084ff,endColorstr=#0052ff,GradientType=1);
+    border-radius: 10px; height: 40px; width: 100px; border-radius: 10px; height: 40px; width: 100px;">
+    </a>
+</div>
+</div>
